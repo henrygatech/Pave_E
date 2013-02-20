@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:src="@drawable/location" />
+    
+    
+    <LinearLayout 
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <RelativeLayout 
+    	android:orientation="horizontal"
+ 	    android:layout_width="fill_parent"
+   		android:layout_height="fill_parent"
+    	android:layout_weight="1">
+     
+        
+        
+        
+    <TextView
+         android:id="@+id/county"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="County :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+    
+    <Spinner
+         android:id="@+id/whichCounty"
+         android:layout_width="170dip"
+         android:layout_height="37dip"
+         android:layout_alignParentLeft="true"
+         android:text="whichCounty"
+         android:layout_below="@+id/county"
+         android:textColor="#000000" />
+    
+
+
+     <TextView
+         android:id="@+id/routeTypeview"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="Route Type :"
+         android:layout_below="@+id/whichCounty"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+
+     <Spinner
+         android:id="@+id/routeType"
+         android:layout_width="170dip"
+         android:layout_height="37dip"
+         android:layout_alignParentLeft="true"
+         android:textColor="#000000"
+         android:layout_below="@+id/routeTypeview"
+         android:text="Route Type" />
+
+     <TextView
+         android:id="@+id/Rt_NoView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/routeType"
+         android:text="Road No :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+
+     <Spinner
+         android:id="@+id/Rt_No"
+         android:layout_width="170dip"
+         android:layout_height="37dip"
+         android:layout_alignParentLeft="true"
+		 android:layout_below="@+id/Rt_NoView"
+         android:text="Road No"
+		 android:textColor="#000000"/>
+     
+     
+    <TextView
+         android:id="@+id/Rt_SuffixView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/Rt_No"
+         android:text="Route Suffix :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+    
+    <Spinner
+         android:id="@+id/Rt_Suffix"
+         android:layout_width="170dip"
+         android:layout_height="37dip"
+         android:layout_alignParentLeft="true"
+         android:text="Rt_Suffix"
+         android:layout_below="@+id/Rt_SuffixView"
+         android:textColor="#000000" />
+    
+    <TextView
+         android:id="@+id/FromView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/Rt_SuffixView"
+         android:text="From :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+    
+	<EditText
+    	android:id="@+id/From"
+    	android:layout_width="fill_parent"
+    	android:layout_height="37dip"
+    	android:textColor="#000000"
+    	android:layout_below="@+id/FromView" />
+    
+    <TextView
+         android:id="@+id/ToView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/From"
+         android:text="To :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+    
+	<EditText
+    	android:id="@+id/To"
+    	android:layout_width="fill_parent"
+    	android:layout_height="37dip"
+    	android:textColor="#000000"
+    	android:layout_below="@+id/ToView" />
+	
+    <ImageButton
+    	android:id="@+id/saveLocation"
+    	android:layout_width="37dip"
+    	android:layout_height="37dip"
+    	android:layout_below="@+id/To"
+    	android:text="Save Location"/>
+    
+    </RelativeLayout>
+     
+    <RelativeLayout 
+    	android:orientation="horizontal"
+ 	    android:layout_width="fill_parent"
+   		android:layout_height="fill_parent"
+    	android:layout_weight="1">
+     
+    <TextView
+         android:id="@+id/lattituteTextView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="lattitute :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+    
+	<EditText
+    	android:id="@+id/lattitute"
+    	android:layout_width="fill_parent"
+    	android:layout_height="37dip"
+    	android:textColor="#000000"
+    	android:layout_below="@+id/lattituteTextView" />
+	
+	<TextView
+	    
+         android:id="@+id/longituteTextView"
+         android:layout_below="@+id/lattitute"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="Longitute :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+     
+	<EditText
+    	android:id="@+id/longitute"
+    	android:layout_width="fill_parent"
+    	android:layout_height="37dip"
+    	android:textColor="#000000"
+    	android:layout_below="@+id/longituteTextView" />
+     
+
+    
+    <TextView
+         android:id="@+id/retrieveTextView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="Retrieve From :"
+         android:layout_below="@+id/longitute"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+
+    <Spinner
+         android:id="@+id/retrieveFrom"
+         android:layout_width="170dip"
+         android:layout_height="37dip"
+         android:layout_alignParentLeft="true"
+         android:textColor="#000000"
+         android:layout_below="@+id/retrieveTextView"
+         android:text="retrieveFrom" />
+
+     <TextView
+         android:id="@+id/laneTextview"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/retrieveFrom"
+         android:text="Lane Location :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+
+     <Spinner
+         android:id="@+id/laneLocation"
+         android:layout_width="170dip"
+         android:layout_height="37dip"
+         android:layout_alignParentLeft="true"
+		 android:layout_below="@+id/laneTextview"
+         android:text="laneLocation"
+		 android:textColor="#000000"/>
+     
+     <TextView
+	    
+         android:id="@+id/DiameterTextView"
+         android:layout_below="@+id/laneLocation"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="Diameters(inches) :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+     
+	<EditText
+    	android:id="@+id/Diameter"
+    	android:layout_width="fill_parent"
+    	android:layout_height="37dip"
+    	android:textColor="#000000"
+    	android:layout_below="@+id/DiameterTextView" />
+	
+	<TextView
+	    
+         android:id="@+id/maxDepthTextView"
+         android:layout_below="@+id/Diameter"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="MaxDepth(inches) :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+	
+     
+	<EditText
+    	android:id="@+id/MaxDepth"
+    	android:layout_width="fill_parent"
+    	android:layout_height="37dip"
+    	android:textColor="#000000"
+    	android:layout_below="@+id/maxDepthTextView" />
+     
+     </RelativeLayout>
+     
+     <RelativeLayout 
+    	android:orientation="horizontal"
+ 	    android:layout_width="fill_parent"
+   		android:layout_height="fill_parent"
+    	android:layout_weight="1">
+     
+     <TextView
+         android:id="@+id/MaterialName"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="Material :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+    
+    <Spinner
+         android:id="@+id/Material"
+         android:layout_width="170dip"
+         android:layout_height="37dip"
+         android:layout_alignParentLeft="true"
+         android:text="Material"
+         android:layout_below="@+id/MaterialName"
+         android:textColor="#000000" />
+    
+     <TextView
+         android:id="@+id/underlyingMaterialName"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="Underlying Material :"
+         android:layout_below="@+id/Material"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+
+     <Spinner
+         android:id="@+id/underlyingMaterial"
+         android:layout_width="170dip"
+         android:layout_height="37dip"
+         android:layout_alignParentLeft="true"
+         android:textColor="#000000"
+         android:layout_below="@+id/underlyingMaterialName"
+         android:text="underlying Material" />
+
+     
+     <TextView
+         android:id="@+id/crackTypeTextVview"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/underlyingMaterial"
+         android:layout_marginLeft="14dp"
+         android:layout_marginTop="76dp"
+         android:text="Cracking Type :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+
+     <Spinner
+         android:id="@+id/crackType"
+         android:layout_width="170dip"
+         android:layout_height="37dip"
+         android:layout_alignParentLeft="true"
+		 android:layout_below="@+id/crackTypeTextVview"
+         android:text="crackType"
+		 android:textColor="#000000"/>
+     
+     <TextView
+         android:id="@+id/crackDirectionTextVview"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/crackType"
+         android:layout_marginLeft="14dp"
+         android:layout_marginTop="76dp"
+         android:text="Cracking Direction :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+
+     <Spinner
+         android:id="@+id/crackDirection"
+         android:layout_width="170dip"
+         android:layout_height="37dip"
+         android:layout_alignParentLeft="true"
+		 android:layout_below="@+id/crackDirectionTextVview"
+         android:text="crackDirection"
+		 android:textColor="#000000"/>
+     
+     <TextView
+         android:id="@+id/levelTextVview"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/crackDirection"
+         android:layout_marginLeft="14dp"
+         android:layout_marginTop="76dp"
+         android:text="Level :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+     
+     <CheckBox android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="level"
+        android:onClick="onCheckboxClicked"/>
+     
+     
+     
+     <TextView
+         android:id="@+id/crackTypeTextVview"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/underlyingMaterial"
+         android:layout_marginLeft="14dp"
+         android:layout_marginTop="76dp"
+         android:text="Cracking Type :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+
+	<EditText
+    	android:id="@+id/Length"
+    	android:layout_width="fill_parent"
+    	android:layout_height="37dip"
+    	android:textColor="#000000"
+    	android:layout_below="@+id/LengthTextView" />
+     
+     </RelativeLayout>
+     </LinearLayout>
+ 
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/child"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#6495ED"
+    android:orientation="horizontal" >
+
+    <!-- 若想隐藏id加入此属性: android:visibility="gone",这样做有点类似于Html中hidden域 -->
+
+    <TextView
+        android:id="@+id/locationID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+
+<!--     <TextView
+        android:id="@+id/county"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5px"
+        android:paddingLeft="50px"
+        android:paddingTop="5px"
+        android:text="No data"
+         />
+
+    <TextView
+        android:id="@+id/ageTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5px"
+        android:paddingLeft="50px"
+        android:paddingTop="5px"
+        android:text="No data"
+        
+        android:textSize="20sp" /> -->
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+<TextView  
+    android:id="@+id/titleId2"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Edit Location Information"
+    android:textSize="17sp"
+    android:layout_centerHorizontal="true"
+    />
+    
+<TextView
+    android:id="@+id/pi_no"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="PI_no"
+    android:textSize="15sp"
+    android:layout_below="@id/titleId2"
+    />
+
+<EditText
+    android:id="@+id/pi_no1"
+    android:layout_width="fill_parent"
+    android:layout_height="37dip"
+    android:layout_below="@+id/pi_no" />
+
+<Spinner
+    android:id="@+id/county_no"
+    android:layout_width="fill_parent"
+    android:layout_height="37dip"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/textview"
+    android:text="county" 
+/>
+
+<TextView
+    android:id="@+id/LocFrom"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Location From"
+    android:textSize="15sp"
+    android:layout_below="@+id/pi_no1"
+    />
+
+<EditText
+    android:id="@+id/locFrom1"
+    android:layout_width="fill_parent"
+    android:layout_height="37dip"
+    android:layout_below="@id/LocFrom"
+    />
+
+<TextView
+    android:id="@+id/LocTo"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/locFrom1"
+    android:text="Location To"
+    android:textSize="15sp" />
+
+<EditText
+    android:id="@+id/LocTo1"
+    android:layout_width="fill_parent"
+    android:layout_height="37dip"
+
+/>
+
+<TextView
+    android:id="@+id/road"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/LocTo1"
+    android:text="road"
+    android:textSize="15sp" />
+
+<EditText
+    android:id="@+id/road1"
+    android:layout_width="fill_parent"
+    android:layout_height="37dip"
+
+    />
+
+<!-- <Spinner
+    android:id="@+id/road"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_marginBottom="14dp"
+    android:text="Road:"
+     /> -->
+
+
+
+<TextView
+    android:id="@+id/textview" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="choice"
+    android:textSize="15sp"
+    android:layout_below="@+id/road1"
+    />
+
+
+
+<Spinner
+    android:id="@+id/core_no"
+    android:layout_width="fill_parent"
+    android:layout_height="37dip"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/textview"
+    android:text="core_no" />
+
+<Button
+    android:id="@+id/savebutton"
+    android:layout_width="wrap_content"
+    android:layout_height="37dip"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/core_no"
+    android:layout_marginTop="20dp"
+    android:text="save" />
+
+
+</LinearLayout>

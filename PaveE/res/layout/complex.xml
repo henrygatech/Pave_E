@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout 
+    	android:orientation="horizontal"
+ 	    android:layout_width="fill_parent"
+   		android:layout_height="fill_parent"
+    	android:layout_weight="1">
+    	
+        
+        <LinearLayout 
+    	android:orientation="horizontal"
+ 	    android:layout_width="fill_parent"
+   		android:layout_height="fill_parent"
+    	android:layout_weight="1">
+    	
+                 <TextView
+         android:id="@+id/locationName"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="Location :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+    
+    <Spinner
+         android:id="@+id/whichLocation"
+         android:layout_width="170dip"
+         android:layout_height="37dip"
+         android:layout_alignParentLeft="true"
+         android:text="whichLocation"
+         android:layout_below="@+id/locationName"
+         android:textColor="#000000" />
+    
+    <Button
+    	android:id="@+id/btnSubmit"
+    	android:layout_width="170dip"
+    	android:layout_height="37dip"
+    	
+    	android:layout_toRightOf="@+id/whichLocation"
+    	android:text="Add Core" 
+    	/>
+            
+            
+    	</LinearLayout>
+            
+    	<TextView
+          android:text="red"
+          android:gravity="center_horizontal"
+          android:background="#aa0000"
+          android:layout_width="wrap_content"
+          android:layout_height="fill_parent"
+          android:layout_weight="1"/>
+      <TextView
+          android:text="green"
+          android:gravity="center_horizontal"
+          android:background="#00aa00"
+          android:layout_width="wrap_content"
+          android:layout_height="fill_parent"
+          android:layout_weight="1"/>
+      <TextView
+          android:text="blue"
+          android:gravity="center_horizontal"
+          android:background="#0000aa"
+          android:layout_width="wrap_content"
+          android:layout_height="fill_parent"
+          android:layout_weight="1"/>
+      <TextView
+          android:text="yellow"
+          android:gravity="center_horizontal"
+          android:background="#aaaa00"
+          android:layout_width="wrap_content"
+          android:layout_height="fill_parent"
+          android:layout_weight="1"/>
+   	</LinearLayout>
+   	
+   	
+    <LinearLayout 
+    	android:orientation="vertical"
+ 	    android:layout_width="fill_parent"
+   		android:layout_height="fill_parent"
+    	android:layout_weight="1">
+    <TextView
+        android:text="row one"
+        android:textSize="15pt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <TextView
+        android:text="row two"
+        android:textSize="15pt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <TextView
+        android:text="row three"
+        android:textSize="15pt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <TextView
+        android:text="row four"
+        android:textSize="15pt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+   	</LinearLayout>
+</LinearLayout>

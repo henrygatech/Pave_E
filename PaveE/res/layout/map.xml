@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:orientation="vertical"
+	 android:layout_width="fill_parent"
+	 android:layout_height="fill_parent">
+	 
+    <GridView
+	    android:id="@+id/mapGridView"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentBottom="true"
+    	android:layout_gravity= "bottom"
+    	android:numColumns="4"
+    	android:horizontalSpacing="10dp"
+    	android:gravity="center_horizontal"
+    	android:background="@drawable/maintab_toolbar_bg">
+	</GridView>
+    
+	 <com.google.android.maps.MapView
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:id="@+id/map_view"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent"
+	  android:clickable="true"
+	  android:enabled="true"
+	  android:apiKey="0wIKi8P5St6afPGoN3TjPInfSJRtKjdRQtQY78A" />
+	 
+	</RelativeLayout>
