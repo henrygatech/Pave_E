@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">appl</string>
+    <string name="activity01">activity01</string>
+    <string name="activity02">activity02</string>
+    <string name="Core_No">Core No</string>
+    <string name="choice">choice</string>
+    <string name="LocationActivity">LocationActivity</string>
+    <string name="CoreActivity">CoreActivity</string>
+    <string name="MapActivity">MapActivity</string>
+    <string name="GPSActivity">GPSActivity</string>
+    <string name="SaveLocationActivity">SaveLocationActivity</string>
+    <string name="camera">camera</string>
+    
+
+    
+</resources>

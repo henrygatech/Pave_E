@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_marginTop="20dip"
+    	android:layout_marginLeft = "60dip"
+        android:src="@drawable/pathing" />
+    
+    
+    <LinearLayout 
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:padding="50sp"
+    android:layout_height="fill_parent" >
+    
+    <RelativeLayout 
+    	android:orientation="horizontal"
+ 	    android:layout_width="fill_parent"
+   		android:layout_height="fill_parent"
+    	android:layout_weight="1">
+     
+        
+        
+        
+    <TextView
+         android:id="@+id/county"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="County :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+    
+    <Spinner
+         android:id="@+id/whichCounty"
+         android:layout_width="170dip"
+         android:layout_height="37dip"
+         android:layout_alignParentLeft="true"
+         android:text="whichCounty"
+         android:background="@drawable/myspinner_background"
+         android:layout_below="@+id/county"
+         android:textColor="#000000" />
+    
+
+
+     <TextView
+         android:id="@+id/routeTypeview"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="Route Type :"
+         android:layout_below="@+id/whichCounty"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+
+     <Spinner
+         android:id="@+id/routeType"
+         android:layout_width="170dip"
+         android:layout_height="37dip"
+         android:layout_alignParentLeft="true"
+         android:textColor="#000000"
+         android:background="@drawable/myspinner_background"
+         android:layout_below="@+id/routeTypeview"
+         android:text="Route Type" />
+
+     <TextView
+         android:id="@+id/Rt_NoView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/routeType"
+         android:text="Road No :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+
+     <Spinner
+         android:id="@+id/Rt_No"
+         android:layout_width="170dip"
+         android:layout_height="37dip"
+         android:layout_alignParentLeft="true"
+		 android:layout_below="@+id/Rt_NoView"
+		 android:background="@drawable/myspinner_background"
+         android:text="Road No"
+		 android:textColor="#000000"/>
+     
+     
+    <TextView
+         android:id="@+id/Rt_SuffixView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/Rt_No"
+         android:text="Route Suffix :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+    
+    <Spinner
+         android:id="@+id/Rt_Suffix"
+         android:layout_width="170dip"
+         android:layout_height="37dip"
+         android:layout_alignParentLeft="true"
+         android:background="@drawable/myspinner_background"
+         android:text="Rt_Suffix"
+         android:layout_below="@+id/Rt_SuffixView"
+         android:textColor="#000000" />
+    
+    <TextView
+         android:id="@+id/FromView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/Rt_Suffix"
+         android:text="From :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+    
+	<EditText
+    	android:id="@+id/From"
+    	android:layout_width="fill_parent"
+    	android:layout_height="37dip"
+    	android:textColor="#000000"
+    	android:layout_below="@+id/FromView" />
+    
+    <TextView
+         android:id="@+id/ToView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/From"
+         android:text="To :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+    
+	<EditText
+    	android:id="@+id/To"
+    	android:layout_width="fill_parent"
+    	android:layout_height="37dip"
+    	android:textColor="#000000"
+    	android:layout_below="@+id/ToView" />
+	
+    <Gallery
+         android:id="@+id/gallery"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:spacing="2dp"
+         android:layout_marginTop="5dp"   
+    />
+	
+    <Button
+    	android:id="@+id/saveLocation"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/To"
+    	android:text="Save Location"/>
+    
+    </RelativeLayout>
+     
+    <RelativeLayout 
+    	android:orientation="horizontal"
+ 	    android:layout_width="fill_parent"
+   		android:layout_height="fill_parent"
+    	android:layout_weight="1">
+<!--      
+    <TextView
+         android:id="@+id/lattituteTextView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="lattitute :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+    
+	<EditText
+    	android:id="@+id/lattitute"
+    	android:layout_width="fill_parent"
+    	android:layout_height="37dip"
+    	android:textColor="#000000"
+    	android:layout_below="@+id/lattituteTextView" />
+	
+	<TextView
+	    
+         android:id="@+id/longituteTextView"
+         android:layout_below="@+id/lattitute"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="Longitute :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+     
+	<EditText
+    	android:id="@+id/longitute"
+    	android:layout_width="fill_parent"
+    	android:layout_height="37dip"
+    	android:textColor="#000000"
+    	android:layout_below="@+id/longituteTextView" />
+      -->
+
+    
+    <TextView
+         android:id="@+id/retrieveTextView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="Retrieve From :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+
+    <Spinner
+         android:id="@+id/retrieveFrom"
+         android:layout_width="170dip"
+         android:layout_height="37dip"
+         android:layout_alignParentLeft="true"
+         android:background="@drawable/myspinner_background"
+         android:textColor="#000000"
+         android:layout_below="@+id/retrieveTextView"
+         android:text="retrieveFrom" />
+
+     <TextView
+         android:id="@+id/laneTextview"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/retrieveFrom"
+         android:text="Lane Location :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+
+     <Spinner
+         android:id="@+id/laneLocation"
+         android:layout_width="170dip"
+         android:layout_height="37dip"
+         android:layout_alignParentLeft="true"
+         android:background="@drawable/myspinner_background"
+		 android:layout_below="@+id/laneTextview"
+         android:text="laneLocation"
+		 android:textColor="#000000"/>
+     
+     <TextView
+	    
+         android:id="@+id/DiameterTextView"
+         android:layout_below="@+id/laneLocation"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="Diameters(inches) :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+     
+	<EditText
+    	android:id="@+id/Diameter"
+    	android:layout_width="fill_parent"
+    	android:layout_height="37dip"
+    	android:textColor="#000000"
+    	android:layout_below="@+id/DiameterTextView" />
+	
+	<TextView
+	    
+         android:id="@+id/maxDepthTextView"
+         android:layout_below="@+id/Diameter"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="MaxDepth(inches) :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+	
+     
+	<EditText
+    	android:id="@+id/MaxDepth"
+    	android:layout_width="fill_parent"
+    	android:layout_height="37dip"
+    	android:textColor="#000000"
+    	android:layout_below="@+id/maxDepthTextView" />
+     
+     </RelativeLayout>
+     
+     <RelativeLayout 
+    	android:orientation="horizontal"
+ 	    android:layout_width="fill_parent"
+   		android:layout_height="fill_parent"
+    	android:layout_weight="1">
+     
+     <TextView
+         android:id="@+id/Left_Shoulder"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="Left Shoulder :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+    
+     <TextView
+         android:id="@+id/Left_Shoulder_widthView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Left Shoulder width:"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:layout_below="@+id/Left_Shoulder" 
+         android:textColor="#000000" />
+     
+     <EditText
+    	android:id="@+id/Left_Shoulder_width"
+    	android:layout_width="fill_parent"
+    	android:layout_height="37dip"
+    	android:textColor="#000000"
+    	android:layout_below="@+id/Left_Shoulder_widthView" />
+     
+     <TextView
+         android:id="@+id/Left_Shoulder_Material"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/Left_Shoulder_width"
+         android:text="Left Shoulder Material :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+
+     <Spinner
+         android:id="@+id/Left_Shoulder_MaterialSpinner"
+         android:layout_width="170dip"
+         android:layout_height="37dip"
+         android:layout_alignParentLeft="true"
+         android:background="@drawable/myspinner_background"
+		 android:layout_below="@+id/Left_Shoulder_Material"
+		 android:textColor="#000000"/>
+     
+     <TextView
+         android:id="@+id/Right_Shoulder"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="Right Shoulder :"
+         android:layout_below="@+id/Left_Shoulder_MaterialSpinner"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+     
+     <TextView
+         android:id="@+id/Right_Shoulder_widthView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Right Shoulder width:"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:layout_below="@+id/Right_Shoulder" 
+         android:textColor="#000000" />
+     
+     <EditText
+    	android:id="@+id/Right_Shoulder_width"
+    	android:layout_width="fill_parent"
+    	android:layout_height="37dip"
+    	android:textColor="#000000"
+    	android:layout_below="@+id/Right_Shoulder_widthView" />
+
+     <TextView
+         android:id="@+id/Right_Shoulder_Material"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/Right_Shoulder_width"
+         android:text="Right Shoulder Material :"
+         android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#000000" />
+
+     <Spinner
+         android:id="@+id/Right_Shoulder_MaterialSpinner"
+         android:layout_width="170dip"
+         android:layout_height="37dip"
+         android:layout_alignParentLeft="true"
+         android:background="@drawable/myspinner_background"
+		 android:layout_below="@+id/Right_Shoulder_Material"
+		 android:textColor="#000000"/>
+    
+     
+     </RelativeLayout>
+     </LinearLayout>
+ 
+</LinearLayout>
